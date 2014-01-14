@@ -1,0 +1,826 @@
+/*  
+Theme Name: SillySleeves Theme
+Theme URI: http://www.sillysleeves.com.au/
+Version: 1.0
+Description: Custom Theme based on Canvas
+Author: GnarlyMedia
+Author URI: http://www.gnarlymedia.com.au
+Template: canvas
+
+*/
+
+/* Default styles */
+
+/*@import "../canvas/css/reset.css";*/
+@import "../canvas/style.css";
+/*@import "brush-sketch/assets/bootstrap.css";*/
+/*@import "brush-sketch/assets/styles.css";*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/*-------------------------------------------------------------------------------------------*/
+
+body
+{
+	height:100%;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif !important;
+}
+div#logo h1.site-title, #logo span.site-description, span.site-title a
+{
+	display: none;
+}
+#header
+{
+    background-image: url("http://sillysleeves.com.au/wp-content/uploads/2013/12/header_FINAL.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#header-container
+{
+    background: none repeat scroll 0 0 transparent;
+}
+#footer-widgets
+{
+	background-image: url("http://sillysleeves.com.au/wp-content/uploads/2013/12/footer_FINAL.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+div#footer-container
+{
+    background: none repeat scroll 0 0 transparent;
+	border-top: none;
+	background-color: none;
+}
+#content
+{
+	/*padding-bottom: 0;*/
+}
+img#wpstats
+{
+	display: none;
+}
+
+/*
+// Responsive: Mobile
+// --------------------------------------------------
+*/
+
+/* Smaller mobile */
+
+/* general */
+@media (max-width: 320px) {
+	footer#footer
+	{
+		background-color:#484848;
+		border-top:none;
+		color:#fff;
+		padding:15px 15px 15px 15px;
+		margin-bottom:0;
+	}
+	#footer-widgets
+	{
+    	background-size: auto 100%;
+	}
+	form.woocommerce-ordering select.orderby
+	{
+		margin-bottom: 10px;
+	}
+	input#mc_signup_submit
+	{
+		font-size:8px;
+		margin-top:18px;
+	}
+	input#mc_mv_EMAIL,input#mc_signup_submit
+	{
+		min-width:90%;
+		min-height:90%;
+	}
+	div.block.footer-widget-1
+	{
+		min-width:100%;
+	}
+	div.block.footer-widget-1 p
+	{
+		font-size: 8px;
+		margin-bottom: 0;
+	}
+	div.block.footer-widget-2,div.block.footer-widget-3
+	{
+		float:left;
+	}
+	div.block.footer-widget-1 h3
+	{
+		font-size: 9px;
+	}
+	#footer-widgets .block
+	{
+		padding-top: 0;
+	}
+	#footer-widgets .widget
+	{
+		margin-bottom: 0;
+	}
+	#footer-widgets
+	{
+		padding-bottom: 2px;
+	}
+}
+
+/* portrait */
+@media (max-width: 320px) and (orientation:portrait) {
+	#header
+	{
+		height:30px;
+	}
+	#footer
+	{
+		height:50px;
+	}
+	#portfolio #port-tags .port-cat
+	{
+		font-size:9px;
+	}
+	#portfolio #port-tags .port-cat a
+	{
+		padding:2px 3px;
+		margin:0;
+	}
+}
+
+/* landscape */
+@media (max-width: 320px) and (orientation:landscape) {
+	#header
+	{
+		height:70px;
+	}
+	#footer
+	{
+		height:60px;
+	}
+	#portfolio #port-tags .port-cat
+	{
+		font-size:9px;
+	}
+	#portfolio #port-tags .port-cat a
+	{
+		padding:2px 4px;
+		margin:0;
+	}
+}
+
+/* Medium mobile */
+
+/* general */
+@media (min-width: 321px) and (max-width: 568px) {
+	footer#footer
+	{
+		background-color:#484848;
+		border-top:none;
+		color:#fff;
+		padding:15px 15px 15px 15px;
+		margin-bottom:0;
+	}
+	#footer-widgets
+	{
+    	background-size: auto 100%;
+	}
+	form.woocommerce-ordering select.orderby
+	{
+		margin-bottom: 10px;
+	}
+	input#mc_signup_submit
+	{
+		font-size:10px;
+		margin-top:16px;
+	}
+	input#mc_mv_EMAIL,input#mc_signup_submit
+	{
+		min-width:90%;
+		min-height:90%;
+	}
+	div.block.footer-widget-1
+	{
+		min-width:40%;
+	}
+	div.block.footer-widget-1 p
+	{
+		font-size: 9px;
+		margin-bottom: 0;
+	}
+	div.block.footer-widget-1 h3
+	{
+		font-size: 11px;
+	}
+	#footer-widgets .block
+	{
+		padding-top: 0;
+	}
+	#footer-widgets .widget
+	{
+		margin-bottom: 0;
+	}
+	#footer-widgets
+	{
+		padding-bottom: 20px;
+	}
+}
+
+/* portrait */
+@media (min-width: 321px) and (max-width: 568px) and (orientation:portrait) {
+	#header
+	{
+		height:90px;
+	}
+	#footer
+	{
+		height:50px;
+	}
+	#portfolio #port-tags .port-cat
+	{
+		font-size:9px;
+	}
+	#portfolio #port-tags .port-cat a
+	{
+		padding:2px 3px;
+		margin:0;
+	}
+}
+
+/* landscape */
+@media (min-width: 321px) and (max-width: 568px) and (orientation:landscape) {
+	#header
+	{
+		height:100px;
+	}
+	#footer
+	{
+		height:60px;
+	}
+	#portfolio #port-tags .port-cat
+	{
+		font-size:10px;
+	}
+	#portfolio #port-tags .port-cat a
+	{
+		padding:2px 5px;
+		margin:0;
+	}
+}
+
+
+/* Larger mobile */
+
+/* general */
+@media (min-width: 569px) and (max-width: 767px) {
+	footer#footer
+	{
+		background-color:#484848;
+		border-top:none;
+		color:#fff;
+		padding:15px 15px 15px 15px;
+		margin-bottom:0;
+	}
+	#footer-widgets
+	{
+    	background-size: auto 100%;
+	}
+	form.woocommerce-ordering select.orderby
+	{
+		margin-bottom: 10px;
+	}
+	div.block.footer-widget-1
+	{
+		min-width:50%;
+	}
+	div.block.footer-widget-1 p
+	{
+		margin-bottom: 0;
+	}
+}
+
+/* portrait */
+@media (min-width: 569px) and (max-width: 767px) and (orientation:portrait) {
+	#header
+	{
+		height:150px;
+	}
+	#footer
+	{
+		height:50px;
+	}
+}
+
+/* landscape */
+@media (min-width: 569px) and (max-width: 767px) and (orientation:landscape) {
+	#header
+	{
+		height:130px;
+	}
+	#footer
+	{
+		height:60px;
+	}
+}
+
+/*
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+*/
+/* general */
+@media (min-width: 768px) and (max-width: 1199px) {
+	footer#footer
+	{
+		background-color:#484848;
+		border-top:none;
+		color:#fff;
+		padding:15px 15px 5px 15px;
+		margin-bottom:0;
+	}
+	div#mailchimpsf_widget-2
+	{
+		min-width:320px;
+	}
+	.widget_woo_subscribe .social
+	{
+		text-align:right;
+	}
+	#footer-widgets
+	{
+    	background-size: 100% auto;
+	}
+	#footer-widgets
+	{
+    	height:110px;
+	}
+	div.block.footer-widget-1
+	{
+		min-width:30%;
+	}
+	div#footer-widgets-container section#footer-widgets
+	{
+		padding-top: 0;
+	}
+	div.block.footer-widget-1 p
+	{
+		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) and (orientation:portrait) {
+    /* portrait-specific styles */
+	#header
+	{
+		height:200px;
+	}
+	#footer
+	{
+		height:30px;
+	}
+	ul.nav
+	{
+		left: 6%;
+		right: 6%;
+	}
+	#top ul.nav li a
+	{
+ 		font-size:12px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) and (orientation:landscape) {
+    /* landscape-specific styles */
+	#header
+	{
+		height:280px;
+	}
+	#footer
+	{
+		height:30px;
+	}
+	ul.nav
+	{
+		left: 5%;
+		right: 5%;
+	}
+	#top ul.nav li a
+	{
+ 		font-size:16px !important;
+	}
+}
+
+/*
+// Responsive: Desktop
+// --------------------------------------------------
+*/
+@media (min-width: 1200px) and (max-width: 1439px) {
+	#header
+	{
+		height:300px;
+	}
+	#footer
+	{
+		/*
+		height:150px;
+		*/
+	}
+	div#mailchimpsf_widget-2
+	{
+		min-width:320px;
+	}
+	.widget_woo_subscribe .social
+	{
+		text-align:right;
+		padding-right: 10%;
+	}
+	footer#footer
+	{
+		background-color:#484848;
+		border-top:none;
+		color:#fff;
+		padding:15px 15px 5px 15px;
+		margin-bottom:0;
+	}
+	#footer-widgets
+	{
+    	background-size: 100% auto;
+		height: 150px;
+	}
+	ul.nav
+	{
+		left: 12%;
+		right: 12%;
+	}
+	#top ul.nav li a
+	{
+ 		font-size:16px !important;
+	}
+}
+
+
+/*
+// Responsive: Large desktop and up
+// --------------------------------------------------
+*/
+@media (min-width: 1440px) {
+	#header
+	{
+		height:355px;
+	}
+	#footer
+	{
+		/*
+		height:150px;
+		*/
+	}
+	div#mailchimpsf_widget-2
+	{
+		min-width:320px;
+	}
+	.widget_woo_subscribe .social
+	{
+		text-align:right;
+		padding-right: 10%;
+	}
+	footer#footer
+	{
+		background-color:#484848;
+		border-top:none;
+		color:#fff;
+		padding:15px 15px 5px 15px;
+		margin-bottom:0;
+	}
+	#footer-widgets
+	{
+    	background-size: 100% auto;
+		height: 170px;
+	}
+	ul.nav
+	{
+		left: 12%;
+		right: 12%;
+	}
+	#top ul.nav li a
+	{
+ 		font-size:18px !important;
+	}
+}
+
+
+
+// --------------------------------------------------
+
+@media only screen and (min-width: 768px) {
+    #wooslider-id-1
+	{
+        margin: 0 auto;
+        max-width:80%;
+    }
+    #homepage_images
+	{
+    	width: 95%;
+	}
+}
+
+/*
+// End of responsive code
+// --------------------------------------------------
+*/
+
+div#wrapper
+{
+	padding-bottom:0;
+}
+p.sml_name
+{
+	display:none !important;
+}
+p.sml_submit
+{
+	display:inline;
+}
+p.sml_email
+{
+	width:100px;
+}
+footer-widget-2
+{
+	width:300px;
+}
+/*
+// Canvas sketching
+// --------------------------------------------------
+*/
+.tools a
+{
+	border: 1px solid black;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	font-weight: bold;
+}
+article canvas
+{
+	margin: 10px 0;
+	/*width: 800px;*/
+	/*height: 300px;*/
+	border: 1px solid #ccc;
+}
+/*
+nav#navigation
+{
+	display: none !important;
+}
+*/
+.entry img, img.thumbnail, #portfolio .group.portfolio-img img
+{
+	height: auto;
+	padding: 0;
+	border: none;
+	background: #F8F8F8;
+	background: rgba(255, 255, 255, 0.7);
+	margin: 0;
+}
+.widget div.textwidget p, .widget div.textwidget h3
+{
+	color: #fff;
+}
+section#footer-widgets div, section#footer-widgets div h3
+{
+	color: #fff;
+}
+.widget div.textwidget p
+{
+	margin-top:5px;
+}
+.widget div.textwidget h3
+{
+	border-bottom:none;
+	display:inline;
+	margin-left:10px;
+}
+.widget div.textwidget img
+{
+	margin-bottom:4px;
+}
+section#footer-widgets
+{
+/* 	padding: 20px 100px; */
+}
+div.widget_woo_subscribe h3, div.widget_woo_subscribe p
+{
+	display: none !important;
+}
+.blog_thumbnail
+{
+	display:inline;
+}
+#drawing_touch_container
+{
+	position: relative;
+	margin:0;
+	padding:0px;
+}
+#drawing_touch_canvas
+{
+	border: 1px solid #000;
+	background-color:#FFF;
+	position:relative;
+	max-width:298px;
+	margin-left:11px;
+	margin-top:5px;
+}
+div.mc_signup_submit, div.mc_merge_var
+{
+	display:inline;
+	float:left;
+}
+div.mc_merge_var
+{
+	width: 40%;
+}
+div.mc_signup_submit
+{
+	width: 60%;
+}
+div.mc_merge_var
+{
+	padding-top: 14px;
+}
+div.mc_form_inside
+{
+	width:100%;
+}
+div.mc_merge_var
+{
+	font-size:12px;
+}
+.category-user_submitted img
+{
+	padding-right:10px;
+}
+article.post a img
+{
+	padding-right: 10px;
+}
+#homepage_images
+{
+    background-image: url("http://sillysleeves.com.au/wp-content/uploads/2013/09/repeatable_backgnd.jpg");
+    background-position: center top;
+    background-repeat: repeat;
+    text-align: center;
+    margin: 30px auto -40px auto;
+}
+
+.CSSHotspotWrapper {width:100%; height:100%;}
+.CSSHotspotPage {width:100%; margin:0 auto;}
+/* h1,h3,h4,p {margin:0; padding:3px 0;} */
+
+.imageMap {width:100%; position:relative; margin-bottom:200px;}
+.imageMap img {display:block; width:100%;}
+.imageMap .hotspots {width:100%; height:100%; position:absolute; left:0; top:0; visibility:hidden;}
+.imageMap a {display:block; position:absolute; background:#000; z-index:100; opacity:0.2; filter: alpha(opacity=20); border:1px solid transparent;}
+.imageMap a.p1 {left:0; top:0; width:33%; height:100%;}
+.imageMap a.p2 {left:33%; top:0; width:34%; height:100%;}
+.imageMap a.p3 {left:67%; top:0; width:33%; height:100%;}
+.imageMap a + p {position:absolute; left:0%; top:102%; width:100%; color:#000; display:none;}
+
+.imageMap:hover .hotspots {visibility:visible;}
+.imageMap p strong {display:block; padding:0; margin:0; font: bold 25px/30px 'times new roman',serif; color:#000;}
+.imageMap p {padding:0; margin:0; font: normal 18px/22px 'times new roman',serif; color:#444;}
+
+.imageMap b {display:block; position:absolute; background:url(trans.gif); z-index:200; opacity:0.2; filter: alpha(opacity=20); padding:1px;
+-webkit-transition:0.75s;
+-moz-transition:0.75s;
+-o-transition:0.75s;
+transition:0.75s;
+}
+
+.imageMap b.b1 {left:0; top:0; width:33%; height:100%;}
+.imageMap b.b2 {left:33%; top:0; width:34%; height:100%;}
+.imageMap b.b3 {left:67%; top:0; width:33%; height:100%;}
+
+.imageMap .hotspots div:hover b {width:0; padding:0;}
+.imageMap .hotspots div:hover p {display:block;}
+.imageMap .hotspots div:hover a {background:#fff; z-index:100; opacity:0.3; filter: alpha(opacity=30); border:1px solid #000;}
+
+
+ul#main-nav
+{
+	display:none;
+}
+div.textwidget a
+{
+	text-decoration: none;
+}
+div.textwidget a:hover
+{
+	color:#fff !important;
+	text-decoration: underline;
+}
+strong.mc_success_msg
+{
+	color:#fff;
+}
+span.mc_error_msg
+{
+	color: yellow;
+	font-weight: bold;
+}
+span.mc_error_msg a
+{
+	color:#fff;
+}
+/* 
+ul.nav
+{
+	left: 7%;
+	right: 7%;
+}
+ */
+div.col-full
+{
+
+}
+ul.wpuf-post-form > li > input.wpuf_submit
+{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	border: none;
+	background: #555555;
+	background: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#424242));
+	background: -webkit-linear-gradient(#555555, #424242);
+	background: -moz-linear-gradient(center top, #555555 0%, #424242 100%);
+	background: -moz-gradient(center top, #555555 0%, #424242 100%);
+	box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+ul.wpuf-attachments li
+{
+	list-style-type: none;
+}
+h1.archive_header
+{
+	display:none;
+}
+form.wpuf-form-add ul.wpuf-form li.wpuf-el, form.wpuf-form-add ul.wpuf-form li.wpuf-submit
+{
+	list-style-type: none;
+}
+.entry table td, .entry table th
+{
+	padding: 0;
+}
+ul.wpuf-form
+{
+	padding-left: 0;
+}
+ul.lcp_catlist
+{
+	padding:0;
+}
+ul.lcp_catlist li
+{
+	list-style-type: none;
+	display: inline-block;
+	padding: 1%;
+}
+.mc_var_label.mc_header.mc_header_email
+{
+	display: none;
+}
+#footer-widgets div.block
+{
+	float:left;
+}
+div.block
+{
+/* 	float: left; */
+}
+div.block.footer-widget-1
+{
+	width: 25%;
+	margin-right: 3.8%;
+	margin-top: 15px;
+}
+div.block.footer-widget-2
+{
+	width: 35%;
+	margin-right: 3.8%;
+	min-width: 165px;
+}
+div.block.footer-widget-3
+{
+	width: 5%;
+	margin-right: 0;
+	margin-top: 14px;
+}
