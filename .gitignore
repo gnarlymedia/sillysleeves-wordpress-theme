@@ -6,3 +6,6 @@ style-consolidated.css
 style-2.css
 style-3.css
 style-local.css
+.gitignore
+js/drawing_combined.js
+js/drawing_touch.js
